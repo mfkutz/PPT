@@ -276,7 +276,7 @@ function App() {
 
         {/* ////////////////////////  THIRD STEP - WINNER / LOOSE //////////////////////// */}
 
-        <div className={`pt-[4rem] flex min-w-[700px] min-h-[500px] justify-around relative ${thirdStep ? '' : 'hidden'} `}>
+        <div className={`pt-[4rem] flex min-w-[700px] min-h-[500px] justify-around relative ${thirdStep ? '' : 'hidden'}`}>
           <div className='flex flex-col items-center'>
             <div className='lg:text-white text-transparent lg:text-[24px] text-[0px] tracking-[2px] pl-3 moving-elementL'>
               YOU PICKED
@@ -285,7 +285,6 @@ function App() {
             <div className='absolute lg:top-[180px] top-[103px] left-[190px] lg:left-[14px]'>
 
               <div className='absolute moving-elementL z-10'>
-
                 <ScissorsWeaponBig disabled={showScissors ? '' : 'hidden'} />
               </div>
 
@@ -293,7 +292,7 @@ function App() {
                 <PaperWeaponBig disabled={showPaper ? '' : 'hidden'} />
               </div>
 
-              <div className='absolute moving-elementL z-10'>
+              <div className='absolute moving-elementL z-10 '>
                 <RockWeaponBig disabled={showRock ? '' : 'hidden'} />
               </div>
 
@@ -305,12 +304,12 @@ function App() {
 
 
           {/* ///////////////////////////////  CASE WIN   /////////////////////// */}
-          <div className={`flex flex-col justify-center items-center lg:ml-0 ml-4 lg:pt-0 pt-[76px] absolute top-[16rem] left-[11.4rem] z-40 w-[300px] ${userWinner ? '' : 'hidden'} `}>
+          <div className={`flex flex-col justify-center items-center lg:ml-0 ml-4 lg:pt-0 pt-[76px] absolute top-[16rem] left-[11.4rem] z-20 w-[300px] ${userWinner ? '' : 'hidden'} `}>
             <div className='text-white text-[64px] font-bold '>
               YOU WIN
             </div>
             <button
-              className='bg-scoreBg lg:py-[14px] lg:px-[80px] py-[12px] px-[62px] lg:rounded-xl rounded-[7px] uppercase text-textScore text-[18px] tracking-[2px] hover:text-red-600 '
+              className='bg-scoreBg lg:py-[14px] lg:px-[80px] py-[12px] px-[62px] lg:rounded-xl rounded-[7px] uppercase text-textScore text-[18px] tracking-[2px] hover:text-red-600  '
               onClick={playAgain}
             >
 
@@ -319,7 +318,7 @@ function App() {
           </div>
 
           {/* ///////////////////////////////  CASE LOOSE   /////////////////////// */}
-          <div className={`flex flex-col justify-center items-center lg:ml-0 ml-4 lg:pt-0 pt-[76px] absolute top-[16rem] left-[11.4rem] z-40 w-[300px] ${computerWinner ? '' : 'hidden'} `}>
+          <div className={`flex flex-col justify-center items-center lg:ml-0 ml-4 lg:pt-0 pt-[76px] absolute top-[16rem] left-[11.4rem] z-20 w-[300px] ${computerWinner ? '' : 'hidden'} `}>
             <div className='text-white lg:text-[64px] text-[57px] lg:pt-0 font-bold '>
               YOU LOSE
             </div>
@@ -332,7 +331,7 @@ function App() {
           </div>
 
           {/* ///////////////////////////////  CASE TIE   /////////////////////// */}
-          <div className={`flex flex-col justify-center items-center lg:ml-0 ml-4 lg:pt-0 pt-[76px] absolute top-[16rem] left-[11.4rem] z-40 w-[300px] ${resultTie ? '' : 'hidden'}`}>
+          <div className={`flex flex-col justify-center items-center lg:ml-0 ml-4 lg:pt-0 pt-[76px] absolute top-[16rem] left-[11.4rem] z-20 w-[300px] ${resultTie ? '' : 'hidden'}`}>
             <div className='text-white text-[64px] font-bold '>
               TIE!
             </div>
@@ -432,7 +431,7 @@ function App() {
 
 
           {/* //////////////////////////////////Rules/////////////////////////////////// */}
-          <div className='' >
+          <div className='z-50' >
             <Rules rules={rules} setRules={setRules} />
           </div>
 

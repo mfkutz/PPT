@@ -3,7 +3,7 @@ import rulesImg from '../assets/images/image-rules.svg'
 
 const Rules = ({ rules, setRules }) => {
     return (
-        <div className='flex justify-end px-12 pt-[5px] z-40'>
+        <div className='flex justify-end px-12 pt-[5px] z-50'>
             <button onClick={() => setRules(!rules)} className='text-gray-300 border-[2px] border-Header-Outline rounded-lg px-9 py-[7px] tracking-[2px] cursor-pointer'>
                 RULES
             </button>
@@ -11,7 +11,7 @@ const Rules = ({ rules, setRules }) => {
                 <div className='flex justify-between p-4 px-8 items-center bg-gray-200 rounded-t-lg specialShadow '>
                     <div className='text-[30px] font-bold text-textScore '>RULES</div>
                     <div className='cursor-pointer' onClick={() => setRules(!rules)}>
-                        <img src={closeIcon} alt="close icon" />
+                        <img src={closeIcon} alt="close icon" className='z-40' />
                     </div>
                 </div>
                 <img src={rulesImg} alt="rules" className='bg-gray-200 p-12 pt-4 rounded-b-lg' />
