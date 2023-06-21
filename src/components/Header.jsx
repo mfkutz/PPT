@@ -10,7 +10,7 @@ const Header = ({ score, scoreComputer }) => {
     return (
         <div className="relative border-[3px] flex justify-between items-center lg:p-5 p-4 border-Header-Outline lg:min-w-[700px] min-w-[314px] rounded-xl">
             <img src={logo} alt="logo" className='lg:w-[180px] w-[83px]' />
-            <button onClick={externalLink} className='absolute  lg:top-[160px] top-[75px] lg:left-[10px] left-[16px] bg-red-600 text-white lg:text-[16px] text-[12px] lg:px-5 px-[6px] lg:py-[10px] py-[0px] rounded-lg cursor-pointer'>
+            <button onClick={externalLink} className='absolute  lg:top-[60px] top-[75px] lg:left-[238px] left-[16px] bg-red-600 text-white lg:text-[16px] text-[12px] lg:px-5 px-[6px] lg:py-[6px] py-[0px] rounded-lg cursor-pointer'>
                 BONUS
             </button>
             <div className='flex gap-2'>
