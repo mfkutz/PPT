@@ -245,8 +245,11 @@ function App() {
               <PaperWeaponBig disabled={showPaper ? '' : 'hidden'} />
 
               <RockWeaponBig disabled={showRock ? '' : 'hidden'} />
-
+              <div className='text-white absolute lg:hidden top-[150px] left-[10px] flex w-[150px] text-[18px] tracking-[2px]'>
+                YOU PICKED
+              </div>
             </div>
+
           </div>
 
           <div>
@@ -264,8 +267,11 @@ function App() {
                 <PaperWeaponBig disabled={showPaperComputer ? '' : 'hidden'} />
 
                 <RockWeaponBig disabled={showRockComputer ? '' : 'hidden'} />
-
+                <div className='text-white absolute lg:hidden top-[150px] left-[-20px] flex w-[200px] text-[18px] tracking-[2px]'>
+                  THE HOUSE PICKED
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -439,7 +445,7 @@ function App() {
 
       </div>
 
- 
+
 
 
 
